@@ -1,0 +1,337 @@
+body{
+  font-family: 'Open-sans', sans-serif;
+  color: hsl(192, 100%, 9%);
+}
+
+h2{
+  font-family: 'Poppins', sans-serif;
+}
+
+.row{
+  margin: 0;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+/* first section */
+#first-section{
+  background-image: url("images/bg-hero-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: hsl(193, 100%, 96%);
+  padding-bottom: 5%;
+}
+
+.top{
+  padding: 3% 5%;
+  margin-bottom: 4%;
+}
+
+.logo-image{
+  max-width: 15%;
+}
+
+.free{
+  background-color: white;
+  padding: 1% 5%;
+  font-weight: 700;
+  margin-right: 2%;
+}
+
+.free:hover{
+  opacity: 60%;
+}
+
+.your-user, .flowing-conversation{
+  margin-top: 4%;
+}
+
+.introduction{
+  padding: 7% 8% 5% 5%;
+}
+
+.introduction>h2{
+  font-size: 2.5rem;
+  margin-bottom: 5%;
+}
+
+.introduction>p{
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.get-started{
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  margin-top: 3%;
+  padding: 3% 13%;
+  font-weight: 700;
+}
+
+.get-started:hover{
+  opacity: 60%;
+  color: white;
+}
+
+.image{
+  margin-left: -5%;
+  padding: 0 1.5%;
+}
+
+/* Second Section */
+#second-section{
+  margin: 10% 5%;
+}
+
+.features{
+  border-radius: 10px;
+  border: solid 1px white;
+  margin-bottom: 5%;
+}
+
+.info{
+  padding: 17% 3% 0 9%;
+}
+
+.info>h2{
+  font-size: 2rem;
+  margin-bottom: 4%;
+}
+
+.info>p{
+  color: hsl(208, 11%, 55%);
+  font-size: 1.2rem;
+}
+
+.info-image{
+  padding: 4%;
+}
+
+.ready{
+  margin: 5%;
+  max-height: 5rem;
+}
+
+.banner{
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  padding: 5% 0;
+  border-radius: 15px;
+  border: solid 1px white;
+  background-color: white;
+  z-index: 2;
+  transform: translate3d(0, 0, 200px);
+}
+
+/* third-section */
+#third-section{
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(193, 100%, 96%);
+  padding: 10% 8% 5%;
+}
+
+.bottom-logo{
+  margin-bottom: 3%;
+  max-width: 13%;
+  margin-left: 1%;
+}
+
+.fab{
+  border: solid 1px;
+  border-radius: 50%;
+  padding: 4%;
+  margin: 0 3%;
+}
+
+.fab:hover{
+  color: hsl(322, 100%, 66%);
+  border-color: hsl(322, 100%, 66%);
+}
+
+.bottom-divs{
+  padding-left: 10%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: right;
+}
+
+.footer{
+  float: right;
+}
+
+a{
+  color: hsl(193, 100%, 96%);
+}
+
+a:hover{
+  text-decoration: none;
+  color: hsl(193, 100%, 96%);
+  border-bottom: solid 2px hsl(193, 100%, 96%);
+}
+
+.icon:hover{
+  border-bottom: none;
+}
+
+/* ipad landscape and ipad pro */
+@media only screen and (min-width: 991px) and (max-width: 1200px)
+{
+  .introduction>h2{
+    font-size: 2rem;
+  }
+
+  .introduction>p{
+    font-size: 1.1rem;
+  }
+
+  .info{
+    padding: 10% 7%;
+  }
+
+  .info>h2{
+    font-size: 1.7rem;
+  }
+
+  .info>p{
+    font-size: 1.1rem;
+  }
+
+  .ready{
+    max-height: 7rem;
+  }
+
+  #third-section{
+    padding-bottom: 7%;
+  }
+}
+
+/* Phone and ipad potrait mode */
+@media only screen and (min-width: 375px) and (max-width: 992px)
+{
+  .row{
+    text-align: center;
+  }
+  /* first-section */
+  #first-section{
+    background-image: url("images/bg-hero-mobile.svg");
+  }
+
+  .top{
+    padding: 5% 3%;
+  }
+
+  .logo-image{
+    max-width: 30%;
+  }
+
+  .free{
+    padding: 1% 7%;
+    font-size: 0.9rem;
+  }
+
+  .introduction{
+    padding: 10% 8%;
+  }
+
+  .introduction>h2{
+    font-size: 1.5rem;
+    margin-bottom: 7%;
+  }
+
+  .introduction>p{
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .get-started{
+    padding: 3% 15%;
+    font-size: 0.9rem;
+  }
+
+  .image{
+    margin: 7% 5%;
+  }
+  /* Second section */
+  #second-section{
+    margin: 15% 5%;
+  }
+
+  .info{
+    padding: 5% 11%;
+  }
+
+  .info-image{
+    padding: 15%;
+  }
+
+  .info>p{
+    font-size: 1rem;
+  }
+
+  .info>h2, .banner>h2{
+    font-size: 1.3rem;
+  }
+
+  .features{
+    margin-bottom: 12%;
+  }
+
+  /* third-section */
+  .ready{
+    margin: 20% 3% 3%;
+    max-height: 5rem;
+  }
+
+  .banner{
+    margin: auto;
+    width: 100%;
+    padding: 10% 0;
+  }
+
+  #third-section{
+    padding: 40% 0 5%;
+  }
+
+  .bottom-logo{
+    margin-bottom: 7%;
+    margin-left: 4%;
+    max-width: 40%;
+  }
+
+  .col-lg-3{
+    text-align: left;
+  }
+
+  .bottom-divs{
+    padding-left: 4%;
+  }
+
+  .contact{
+    padding-bottom: 10%;
+  }
+
+  .icons{
+    margin: 6%;
+    text-align: center;
+  }
+
+  .footer{
+    float: none;
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .attribution{
+    text-align: center;
+  }
+
+  .fab{
+    padding: 3%;
+    margin: 0 1%;
+  }
+}
